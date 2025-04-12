@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Riddles</title>
+        <head>
+            <body>
+                <h1>Can you solve these random riddles?</h1>
+                <h2>Get a Random Riddle!</h2>
+            <button onclick="showRidd()">Show Riddle</button>
+                <div id="riddle"></div>
+                <script src="riddle.js"></script>
+                <form id="ans" action="/submit" method="post">
+                    <label for="ans">Answer:</label><br>
+                    <input type="text" id="submitAns" name="answer" required><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </body>
+        </head>
