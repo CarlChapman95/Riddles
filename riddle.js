@@ -9,8 +9,35 @@ function showRidd() {
     const randomRidd = Math.floor(Math.random() * riddles.length);
     document.getElementById("riddle").innerText = riddles[randomRidd];
 }
-document.getElementById('ans').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    let ridInput = document.getElementById('submitAns').value;
-  });
+// const form = document.getElementById('form1');
+// form.addEventListener('submit', fuction(Event)) {
+//     Event.preventDefault();
+//}
+//     const inputAnswer = form.answer.value;
+//     if (riddles[randomRidd] === rid1 && inputAnswer === ans1) {
+//         console.log('You did it!');
+//     }
+// }
+
+
+
+const ansJav= tolower(document.getElementById('submitAns'));
+function bigCheck(ansJav) {
+    document.getElementById("urmom").addEventListener("click", function(event){
+        event.preventDefault()
+      })
+        if (riddles[randomRidd] === rid1 && ansJav === ans1) {
+                     console.log('You did it!');       
+    
+        }
+        else if (riddles[randomRidd] === rid2 && ansJav === ans2) {
+            console.log('You did it!');   
+        }
+        else if (riddles[randomRidd] === rid3 && ansJav === ans3) {
+            console.log('You did it!');   
+        }
+        else {
+            console.log('You suck');
+        }
+}
